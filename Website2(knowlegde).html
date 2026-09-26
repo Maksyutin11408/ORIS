@@ -1,0 +1,429 @@
+<html>
+<head>
+    <title> Getting Started | Knowlenge Base HTML Template </title>
+</head>
+<body>
+    <style>
+        body{
+            box-sizing: border-box;
+            border: 0 solid #e5e7eb;
+            margin: 0;
+            position: relative;
+            border-radius: 8px;
+            font-family: system-ui, sans-serif;
+        }
+        .relative{
+            position: relative;
+        }
+        .mt-4 {
+            margin-top: 1rem;
+        }
+        .space-y-4{
+            gap: 1rem;
+        }
+        .border-slate-200 {
+        border-color: rgb(226 232 240);
+        }
+        .text-slate-900 {
+            color: rgb(15 23 42);
+        }
+        .text-slate-500{
+            color: rgb(100 116 139);
+        }
+        .text-sky-500 {
+        color: rgb(14 165 233);
+        }
+        .font-semibold {
+            font-weight: 600;
+        }
+        .headerMain
+        {
+            box-shadow: inset;
+            box-sizing: border-box; width: 100%; height: 76px; background-color: white; overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+            transition: all 500ms ease; 
+        }
+        .headerBox
+        {
+            max-width: 1376px; 
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            box-sizing: border-box;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            flex: 1 1 0%;                      
+            justify-content: flex-end; 
+            margin-left: 2rem; 
+        }
+        .header-nav {
+            margin-left: 4rem;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            font-size: 0.9rem; 
+            line-height: 1.25rem;
+        }
+        .header-nav a, .dropdown-link {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .arrow-icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        }
+        .search-bar{
+            position: relative;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            width: 24rem;
+            height: 44px;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            color: #94a3b8;
+            cursor: text;
+            border-radius: 0.5rem;
+        }
+        .search-icon{
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            padding-left: 0.75rem;
+        }
+        .search-text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: auto; 
+            line-height: 1.5rem;
+            font-size: .875rem;
+            padding-right: .75rem;
+            padding-left: 2.5rem;
+            padding-top: .625rem;
+            padding-bottom: .625rem;
+        }
+        main{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            max-width: 1376px; 
+            justify-content: center;
+            width: 100vw;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .main-nav-box{
+            position: relative;
+            display: block;
+            flex: none;
+        }
+        .top-left-nav{
+            box-sizing: border-box;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 4rem;
+            width: 18rem;
+            padding-top: 4rem;
+            padding-left: .125rem;
+            height: calc(100vh - 4.5rem);
+            margin-left: -.125rem;
+            top: 4.5rem;
+            position: sticky;
+        }
+        .nav-text{
+            font-size: .875rem;
+            line-height: 1.25rem;
+        }
+        .top-left-nav-list{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+            margin:  0;
+            padding: 0;
+        }
+        .top-left-nav-sublist{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+        }
+        .top-left-nav-subtext{
+            text-decoration: none;
+            color: rgb(100 116 139);
+            padding-left: .875rem;
+            width: 100%;
+            display: block;
+        }
+        h2 {
+            font-size: inherit;
+            font-weight: inherit;
+            margin: 0;  
+            padding: 0; 
+        }
+        h3{
+            font-size: inherit;
+            font-weight: inherit;
+            margin: 0;   
+            padding: 0;
+        }
+        .top-right-nav{   
+            box-sizing: border-box;
+            flex-shrink: 0;
+            flex: none;
+            padding-right: 1.5rem;
+            margin-right: -1.5rem;
+            width: 248px;
+            overflow-y: auto;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            height: calc(100vh - 4.5rem);
+            top: 4.5rem;
+            position: sticky;
+        }
+        .central-content{
+            box-sizing: border-box;
+            min-width: 0;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            max-width: none;
+            padding-top: 4rem;
+            flex: 1 1 auto;
+        }
+        .top-right-nav-list{
+            margin-top: 1rem;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 0.75rem;
+            margin-bottom: 0;
+        }
+        .top-right-nav-text{
+            text-decoration: none;
+            width: 100%;
+            display: block;
+        }
+        .top-right-nav-sublist{
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+            padding-left: 1.25rem;
+            list-style: none;
+        }
+        ol{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            font-size: inherit;
+            font-weight: inherit;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <header class="headerMain">
+        <div class="headerBox">
+            <div class="header-left">
+                <img src="pictures/logo.svg"">
+                <nav class="header-nav font-semibold text-slate-900">
+                    <a href="#">Document</a>
+                    <div class="dropdown-link">
+                    <span>Dropdown</span>
+                    <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                    </div>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="search-bar">
+                    <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div class="search-text">
+                        Search
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-nav-box">
+            <div class="top-left-nav">
+                <nav class="nav-text">
+                    <ul class="top-left-nav-list">
+                        <li>
+                             <h2 class="font-semibold text-slate-900">Introduction</h2>
+                             <ul class="border-slate-200 top-left-nav-sublist mt-4 space-y-4">
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Overview</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Getting started</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Installation</a>
+                                </li>
+                             </ul>
+                        </li>
+                        <li>
+                            <h2 class="font-display font-semibold text-slate-900">Core concepts</h2>
+                            <ul class="border-slate-200 top-left-nav-sublist mt-4 space-y-4">
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Understanding flow</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Predicting user journey</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Basics of design</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Introduction to development</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">The load effect</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2 class="font-display font-semibold text-slate-900">Advanced guides</h2>
+                            <ul class="border-slate-200 top-left-nav-sublist mt-4 space-y-4">
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Writing plugins</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Neuralink integration</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Temporal paradoxes</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Testing blocks</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Compile-time caching</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Predictive data generation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2 class="font-display font-semibold text-slate-900">API reference</h2>
+                            <ul class="border-slate-200 top-left-nav-sublist mt-4 space-y-4">
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">FetchAdvance.load()</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">GetAdvance.get()</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">UploadAdvance.load()</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">LoadAdvance.push()</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2 class="font-display font-semibold text-slate-900">Contributing</h2>
+                            <ul class="border-slate-200 top-left-nav-sublist mt-4 space-y-4">
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">How to contribute</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Architecture guide</a>
+                                </li>
+                                <li class="relative">
+                                    <a class="top-left-nav-subtext" href="/">Design principles</a>
+                                </li>
+                             </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="central-content">
+            <article style="align-self: flex-start; ">
+                <header style="margin-bottom: 2.25rem;">
+                    <p class="font-display font-semibold text-sky-500 nav-text"> Introduction</p>
+                </header>
+            </article>
+        </div>
+        <div class="top-right-nav">
+            <nav class="nav-text">
+                <h2 class="font-display font-semibold text-slate-900">On this page</h2>
+                    <ol class="top-right-nav-list mt-4">
+                    <li>
+                        <h3>
+                            <a class="top-right-nav-text text-slate-500 hover: text-slate-900" href="">Quick start</a>
+                        </h3>
+                        <ol class="top-right-nav-sublist">
+                            <li>
+                                <a class="top-right-nav-text text-slate-500 hover:text-slate-900" href="#installing-dependencies">Installing dependencies</a>
+                            </li>
+                            <li>
+                                <a class="top-right-nav-text text-slate-500 hover:text-slate-900" href="">Configuring the library</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>
+                            <a class="top-right-nav-text text-slate-500 hover: text-slate-900" href="">Basic usage</a>
+                        </h3>
+                        <ol class="top-right-nav-sublist">
+                            <li>
+                                <a class="top-right-nav-text text-slate-500 hover:text-slate-900" href="">Your first cache</a>
+                            </li>
+                            <li>
+                                <a class="top-right-nav-text text-slate-500 hover:text-slate-900" href="">Adding middleware</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>
+                            <a class="top-right-nav-text text-slate-500 hover: text-slate-900" href="">Getting help</a>
+                        </h3>
+                        <ol class="top-right-nav-sublist">
+                            <li>
+                                <a class="top-right-nav-text text-slate-500 hover:text-slate-900" href="">Submit an issue</a>
+                            </li>
+                            <li>
+                                <a class="top-right-nav-text text-slate-500 hover:text-slate-900" href="">Join the community</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </main>
+</body>

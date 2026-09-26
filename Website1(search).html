@@ -1,0 +1,102 @@
+<html>
+<head>
+<title> Search </title>
+</head>
+<body>
+        <style>
+        body{      
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            min-height: 100vh; 
+        }
+        .corner{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+        }
+        .search{
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            text-align: left;
+            gap: 10px;
+            margin-bottom: 40px;
+            padding: 0 10px;
+            opacity: 0.5;
+            box-sizing: border-box; width: 500px; height: 50px; background-color: white; border: 1px solid gray; border-radius: 8px; overflow: hidden;
+            filter:brightness(0.95)
+            
+        }
+        .recentbox{
+            list-style: none;  
+            margin: 0;             
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 500px;
+            justify-content: space-between;
+        }
+        .recent{
+            font-family: Inter;
+            font-size: 40px;
+            font-weight: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.75;
+            box-sizing: border-box; width: 50px; height: 50px; background-color: white; border: 1px solid gray; border-radius: 8px; overflow: hidden;
+            filter:brightness(0.95);
+        }
+        .recent img{
+            width: 30px;
+            height: 30px;
+        }
+        .search img {
+            width: 20px;
+            height: 20px;
+        }
+        </style>
+    <div weather class="corner">
+        <h3 style="margin-bottom: 10px; font-size: 25px;">
+            36°
+        </h3>
+        <h4 style="color: blue; margin-top: 0px;">
+            Ahmedabad
+        </h4>
+    </div>
+    <div middle class="center">
+        <h1 style="font-size: 45px; margin-bottom: 22px;">
+            09:11:01 
+        </h1>
+        <h3 style="color: blue; margin-bottom: 37px; margin-top: 0px;">
+            Good Morning, Saad.
+        </h3>
+        <div class="search">
+            <img src = "pictures/search.jpg">
+            <p>
+            Search
+            </p>
+        </div>
+        <ul class="recentbox">
+            <li  class="recent"> <img src="pictures/youtube.png" alt=""> </li>
+            <li  class="recent"> <img src="pictures/chatgpt.png" alt=""> </li>
+            <li  class="recent"> <img src="" alt=""> </li>
+            <li  class="recent"> <img src="pictures/deepseek.jpg" alt=""></li>
+            <li  class="recent"> <img src="pictures/github.png" alt=""> </li>
+            <li  class="recent"> <img src="pictures/linkedin.jpg" alt=""></li>
+            <li  class="recent"> + </li>
+        </ul>
+    </div>
+</body>
