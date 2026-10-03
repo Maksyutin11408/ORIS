@@ -1,0 +1,363 @@
+body
+{
+    color: #4d4d4d;
+    background-color: #000000;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+.AppBody_wrap_yAhlH
+{
+    height: 100%;
+    width: 100%;
+}
+.AppBody__wrap__yAhlH::before 
+{
+  background-image: url(../../../images/bg-repeat.png);
+  background-repeat: repeat;
+  background-size: 256px;
+  content: " ";
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
+}
+.AppBody_content_CVbMQ
+{
+    padding-top: 40px;
+}
+.AppBody_main_ev4fM
+{
+    align-self: center;
+    grid-area: content;
+    justify-self: center;
+    position: relative;
+    margin-top: 55px;
+    margin-bottom: 43px;
+}
+.Logo_logo_FASmt
+{
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem auto;
+    margin-bottom: 1.5rem;
+}
+a {
+  color: #fcaf17;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Container_container_k4t_f 
+{
+  animation-duration: .4s;
+  animation-name: Container__fadein__jqFmd;
+  animation-timing-function: ease-out;
+  background-color: #fff;
+  border-radius: .125rem;
+  box-shadow: 0 0 1.25rem 0 rgba(0,0,0,.3);
+  margin: 1.25rem auto;
+  width: 31.25rem;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+.Heading_heading_I7Vf8 {
+  color: #4d4d4d;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-weight: 600;
+  margin-bottom: .625rem;
+  margin-top: 0;
+}
+h1.Heading_heading_I7Vf8 {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+.login_form_d9S1F
+{
+    margin-top: 1.25rem;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+.Fieldset_fieldset_9mCP
+{
+    border: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
+}
+.UI__TextInput-socialclub__input {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+}
+button, input {
+  overflow: visible;
+}
+.UI__TextInput-socialclub__field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  color: #666;
+  display: block;
+  float: left;
+  font-size: 1.125rem;
+  height: 3.125rem;
+  margin: 0;
+  padding: 0 1.25rem;
+  position: relative;
+  width: 100%;
+}
+.UI__TextInput-socialclub__label {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-touch-callout: none;
+  color: #4d4d4d;
+  display: block;
+  float: right;
+  font-size: 1rem;
+  left: 1.25rem;
+  line-height: 3.125rem;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  text-overflow: ellipsis;
+  text-overflow: inherit;
+  transform-origin: 0 0;
+  transition-duration: .2s;
+  transition-property: transform,color;
+  transition-timing-function: cubic-bezier(.4,0,.6,1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: calc(100% - 2.5rem);
+}
+.UI__PasswordInput-socialclub__inputContainer {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.UI__Icon__icon {
+  fill: #999;
+  vertical-align: middle;
+}
+.UI__PasswordInput-socialclub__passwordReveal svg {
+  vertical-align: unset;
+}
+.UI__PasswordInput-socialclub__passwordReveal {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  height: 1rem;
+  padding: 0;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.125rem;
+  width: 2rem;
+}
+.loginform__keepMeSignedInContainer__xhMeJ {
+  align-items: center;
+  display: flex;
+  margin-top: 1.25rem;
+}
+.loginform__checkbox__uLZu8 {
+  color: #000;
+  display: block;
+  line-height: 20px;
+}
+.UI__CheckBox-socialclub__wrapper {
+  position: relative;
+}
+.UI__CheckBox-socialclub__wrapper input[type="checkbox"] {
+  height: 1.25rem;
+  position: absolute;
+  width: 1.25rem;
+}
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.UI__CheckBox-socialclub__wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.25rem;
+  min-height: 20px;
+  padding-left: 1.875rem;
+  position: relative;
+}
+button, input, optgroup, select, textarea {
+  font: inherit;
+  margin: 0;
+}
+.loginform_submitField_NdeFI
+{
+    border: 0;
+    padding: 0;
+}
+fieldset {
+  margin: 0;
+}
+.loginform__submitActions__dWo_j {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.UI__Button-socialclub__primary {
+  background: #fcaf17;
+  border-color: #fcaf17;
+}
+.UI__Button-socialclub__medium {
+  min-width: 6.25rem;
+}
+.loginform__submit__rf6YG {
+  flex-shrink: 0;
+  margin-left: .625rem;
+}
+.UI__Button-socialclub__btn {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  padding: 0 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+.loginform__forgotPassword__P5Rqh {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+.loginform__link__Zf4mD {
+  cursor: pointer;
+}
+.loginform__submitActions__dWo_j p {
+  align-self: center;
+  margin: 0;
+}
+.Login__thirdParty__OmW6_ {
+  margin-bottom: 0;
+}
+.Login__thirdParty__OmW6_ p {
+  color: #4d4d4d;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+  min-width: 50%;
+  text-align: left;
+}
+.Login__tpaWrapper__GDF_9 {
+  align-items: center;
+  display: flex;
+}
+.UI__ThirdPartyAuth__services {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: flex-end;
+  width: 50%;
+}
+.Login__tpaIcon__y8rcv, .Login__tpaIcon__y8rcv > * {
+  max-height: 65px;
+  max-width: 65px;
+}
+.ThirdPartyAuthProvider__link__MzR1g {
+  display: inline-block;
+  flex: 1 0 auto;
+  margin-right: 10px;
+  max-height: 65px;
+  max-width: 65px;
+  position: relative;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+}
+.ThirdPartyAuthProvider__link__MzR1g > img {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+}
+.Login__tpaIcon__y8rcv, .Login__tpaIcon__y8rcv > * {
+  height: 65px;
+  width: 65px;
+}
+.ThirdPartyAuthProvider__link__MzR1g:last-child {
+  margin-right: 0;
+}
+.ThirdPartyIcon__icon__pOdjC
+{
+  width: 65px;
+  height: 65px;
+}
+.Login__createLink__MJZpO {
+  border-radius: .125rem;
+  color: #fff;
+  margin: 1.25rem auto;
+  max-width: 31.25rem;
+  width: 100%;
+  padding: .625rem 0;
+  text-align: center;
+}
+.Login__loginStatusNavLink__lq_aC {
+  text-decoration: underline;
+}
+.AppBody__footer__MyOLg {
+  grid-area: footer;
+  margin-top: 4.66rem;
+  text-align: center;
+}
+.AppBody__infoList__EZ3F9 {
+  list-style: none;
+  margin: 0;
+  padding: 0 .625rem 0;
+}
+.AppBody__info__TxE07:first-child {
+  display: block;
+  line-height: 1.375rem;
+  display: inline-block;
+}
+.AppBody__info__TxE07 {
+  color: #999;
+  display: inline-block;
+  font-size: .75rem;
+  line-height: .75rem;
+  text-shadow: 0 .0625rem 0 rgba(0,0,0,.8);
+  text-transform: uppercase;
+}
+.AppBody__info__TxE07:not(:first-child) {
+  border-left: 1px solid #999;
+  margin-left: .3125rem;
+  padding-left: .3125rem;
+}
+.AppBody__footerPolicyButton__WIWmO {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  color: inherit;
+  color: hsla(0,0%,100%,.8);
+  cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
+  transition: color .2s ease-out;
+}
