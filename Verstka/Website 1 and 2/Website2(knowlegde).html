@@ -21,8 +21,11 @@
         .space-y-4{
             gap: 1rem;
         }
+        .flex{
+            display: flex;
+        }
         .border-slate-200 {
-        border-color: rgb(226 232 240);
+        border-color: rgb(226 232 240) !important; 
         }
         .text-slate-900 {
             color: rgb(15 23 42);
@@ -35,6 +38,10 @@
         }
         .font-semibold {
             font-weight: 600;
+        }
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
         }
         .headerMain
         {
@@ -180,17 +187,11 @@
             width: 100%;
             display: block;
         }
-        h2 {
+        h1,h2,h3 {
             font-size: inherit;
             font-weight: inherit;
             margin: 0;  
             padding: 0; 
-        }
-        h3{
-            font-size: inherit;
-            font-weight: inherit;
-            margin: 0;   
-            padding: 0;
         }
         .top-right-nav{   
             box-sizing: border-box;
@@ -247,11 +248,320 @@
             margin: 0;
             padding: 0;
         }
+        .mb-1{
+            margin-bottom: 0.25rem;
+        }
+        .space-x-4 > * + * {
+            margin-left: 1rem;
+        }
+        .flex-none{
+            flex: none;
+        }
+        .rounded-full {
+        border-radius: 9999px;
+        }
+        .flex-1 {
+        flex: 1 1 0%;
+        }
+        .rounded-md {
+            border-radius:.375rem;
+        }
+        .bg-sky-50 {
+            background-color: rgb(240 249 255);
+        }
+        .px-2\.5 {
+            padding-left: .625rem;
+            padding-right: .625rem;
+        }
+        .py-1\.5 {
+            padding-top: .375rem;
+            padding-bottom: .375rem;
+        }
+        .bg-sky-100{
+            background-color: rgb(224, 242, 254);
+        }
+        .text-decoration-none{
+            text-decoration: none;
+        }
+        .mt-9{ 
+            margin-top: 2.25rem;
+        }
+        .text-slate-600{
+            color: rgb(71 85 105)
+        }
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+        .article-container {
+            color: #334155;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.75;
+        }
+        .article-container p {
+        margin-bottom: 1.25em;
+        }
+        .article-container h1, 
+        .article-container h2, 
+        .article-container h3, 
+        .article-container h4, 
+        .article-container h5, 
+        .article-container h6 {
+        color: #0f172a;
+        font-weight: 600;
+        }
+        .article-container h1 { font-size: 2.25em; margin-top: 0; margin-bottom: 0.88em; line-height: 1.11; }
+        .article-container h2 { font-size: 1.5em; margin-top: 0; margin-bottom: 1em; line-height: 1.33; }
+        .article-container h3 { font-size: 1.25em; margin-top: 1.6em; margin-bottom: 0.6em; line-height: 1.6; }
+        .article-container pre {
+        background-color: #0f172a;
+        color: #e2e8f0;
+        border-radius: 0.75rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        
+        padding: 1.14em 1.71em;
+        overflow-x: auto;
+        margin-top: 1.71em;
+        margin-bottom: 1.71em;
+        }
+        .article-container code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 0.875em;
+        }
+        .article-container p.mb-2\.5 {
+            margin-bottom: .625rem;
+        }
+        .article-container p.no-margin {
+            margin: 0;
+        }
+        .article-container table {
+            width: 100%;
+            table-layout: auto;
+            text-align: left;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            font-size: 0.875em;    
+            line-height: 1.7142857;
+            border-collapse: collapse;
+        }
+        .p-6 {
+            padding:1.5rem;
+        }
+        .bg-yellow-50 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(254 252 232);
+        }
+        .rounded-2xl {
+            border-radius:1rem;
+        }
+        .my-8 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .text-yellow-900 {
+            color: rgb(113 63 18);
+        }
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+        .mt-0{
+            margin-top: 0;
+        }
+        .mb-2\.5 {
+            margin-bottom: .625rem;
+        }
+        .text-yellow-800{
+            color: rgb(133 77 14);
+        }
+        .text-sky-800{
+            color: rgb(7 89 133);
+        }
+        .text-sky-900{
+            color: rgb(12 74 110);
+        }
+        .text-red-800{
+            color: rgb(153 27 27);
+        }
+        .text-red-900{
+            color: rgb(127 29 29);
+        }
+        .bg-red-50{
+            background-color: rgb(254, 242, 242); 
+        }
+        .text-green-800{
+            color: rgb(22 101 52);
+        }
+        .text-green-900{
+            color: rgb(20 83 45);
+        }
+        .bg-green-50{
+            background-color: rgb(240, 253, 244); 
+        }
+        .article-container hr {
+            border-top: 1px solid #e2e8f0;
+            border-bottom: none;
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+        .ol-pretty {
+            counter-reset: list;
+            list-style: none;
+            padding-left: .5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .ol-pretty li {
+            text-indent: -37px;
+            margin-left: 40px;
+            margin-top: .74em;
+            margin-bottom: .74em;
+            counter-increment: list;
+            padding-left: 0;
+        }
+        .ol-pretty li::before {
+            background-color: rgb(224 242 254);
+            color: rgb(71 85 105);
+            font-size: .875rem;
+            margin-right: .75rem;
+            width: 1.5rem;
+            text-indent: .5rem;
+            padding-left: 0;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            border-radius:
+            9999px;
+            -moz-background-clip: padding;
+            -webkit-background-clip:
+            padding-box;
+            background-clip: padding-box;
+            display: inline-block;
+            content: counter(list);
+        }
+        .uk-list {
+            padding: 0;
+            list-style: none;
+        }
+        .uk-list-large > li:nth-child(n+2), 
+        .uk-list-large > dt:nth-child(n+2), 
+        .uk-list-large > dd:nth-child(n+2) {
+            margin-top: 20px;
+        }
+        .overflow-x-auto {
+            overflow-x: auto;
+        }
+        .align-middle {
+            vertical-align: middle;
+        }
+        .min-w-full {
+            min-width: 100%;
+        }
+       .inline-block {
+            display: inline-block;
+        }
+        .custom-table {
+            border-collapse: collapse; 
+        }
+        .custom-table > * + * {
+            border-top-width: 1px;
+            border-top-style: solid;
+        }
+        .py-3\.5{
+            padding-top: 0.875rem;
+            padding-bottom: 0.875rem;
+        }
+        .pl-4{
+            padding-left: 1rem;
+        }
+        .pr-3{
+            padding-right: 0.75rem;
+        }
+        .text-left{
+            text-align: left;
+        }
+        .text-gray-900{
+            color: #111827;
+        }
+        .px-3{
+            padding: 0 0.75rem;
+        }
+        .py-4{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .text-gray-500{
+            color: rgb(107 114 128);
+        }
+        .divide-gray-300 > * + * {
+            border-color: #d1d5db;
+        }
+        .divide-gray-200 > * + * {
+            border-color: rgb(209 213 219);
+        }
+        .mt-12{
+            margin-top: 3rem;
+        }
+        .mt-1{
+            margin: 0.25rem;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .ml-auto{
+            margin-left: auto;
+        }
+        .flex-col {
+            display: flex;
+            flex-direction: column;
+        }
+        .space-y-6{
+            gap: 1.5rem;
+        }
+        .pt-10{
+            padding-top: 2.5rem;
+        }
+        .border-t{
+            border-top: 1px solid;
+        }
+        .items-center {
+            display: flex;
+            align-items: center;
+        }
+        .icon{
+            width: 20;
+            height: 20;
+        }
+         .space-x-2 > * + * {
+            margin-left: 0.5rem;
+        }
+        .text-slate-700{
+            color: rgb(51 65 85);
+        }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }   
+        .max-w-7xl {
+            max-width: 80rem;
+        }
+        .px-6{
+             padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .pt-16{
+            padding-top: 4rem;
+        }
+        .pb-8{
+             padding-bottom: 2rem;
+        }
+        .footer{
+            box-sizing: border-box;
+        }
     </style>
     <header class="headerMain">
         <div class="headerBox">
             <div class="header-left">
-                <img src="pictures/logo.svg"">
+                <img src="Pictures/logo.svg" alt="">
                 <nav class="header-nav font-semibold text-slate-900">
                     <a href="#">Document</a>
                     <div class="dropdown-link">
@@ -375,9 +685,200 @@
         <div class="central-content">
             <article style="align-self: flex-start; ">
                 <header style="margin-bottom: 2.25rem;">
-                    <p class="font-display font-semibold text-sky-500 nav-text"> Introduction</p>
+                    <p class="font-display font-semibold text-sky-500 nav-text mb-1"> Introduction</p>
+                    <h1 class="font-display text-3xl text-slate-900 font-semibold"> Getting started</h1>
+                    <div class="flex space-x-4 mt-4">
+                        <div class="flex-none">
+                            <img class="rounded-full" width="40" height="40" src="Pictures/joshua.jpg" alt="Joshua Birdman">
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-display font-semibold nav-text text-slate-900">Joshua Birdman</p>
+                            <p class="nav-text text-slate-500">Created: May 06, 2023 - Updated: Apr 26, 2023</p>
+                        </div>
+                        <div class="flex-none">
+                            <a href="#" class="rounded-md bg-sky-50 px-2.5 py-1.5 nav-text font-semibold font-display text-sky-500 hover:bg-sky-100 text-decoration-none">Follow</a>
+                        </div>
+                    </div>
+                    <p class="text-lg text-slate-600 mt-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur culpa qui officia deserunt.</p>
                 </header>
+                <div class="article-container">
+                    <h2 id="quick-start">Quick start</h2>
+                    <p>Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.</p>
+                    <h3 id="installing-dependencies">Installing dependencies</h3>
+                    <p>
+                        Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur.
+                        Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+                    </p>
+                    <pre class="prism-code language-shell"><code>plugins: [
+  require('@tailwindcss/forms'),
+  require('@tailwindcss/typography'),
+]
+</code></pre>
+                    <p>
+                        Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque.
+                        Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+                    </p>
+                    <h3 id="configuring-the-library">Configuring the library</h3>
+                    <p>
+                        Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur.
+                         Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+                    </p>
+                    <p>
+                        Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
+                        Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+                    </p>
+                    <div class="my-8 rounded-2xl p-6 bg-yellow-50">
+                        <p class="font-display text-xl text-yellow-900 mt-0 mb-2.5 font-semibold">Consequatur et cum atque mollitia</p>
+                        <div class="prose text-yellow-800">
+                            <p class="no-margin">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur culpa qui officia deserunt mollit laborum.</p>
+                        </div>
+                    </div>
+                    <div class="my-8 rounded-2xl p-6 bg-sky-50">
+                        <p class="font-display text-xl text-sky-900 mt-0 mb-2.5 font-semibold">Consequatur et cum atque mollitia</p>
+                        <div class="prose text-sky-800">
+                            <p class="no-margin">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur culpa qui officia deserunt mollit laborum.</p>
+                        </div>
+                    </div>
+                    <div class="my-8 rounded-2xl p-6 bg-green-50">
+                        <p class="font-display text-xl text-green-900 mt-0 mb-2.5 font-semibold">Consequatur et cum atque mollitia</p>
+                        <div class="prose text-green-800">
+                            <p class="no-margin">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur culpa qui officia deserunt mollit laborum.</p>
+                        </div>
+                    </div>    
+                    <div class="my-8 rounded-2xl p-6 bg-red-50">
+                        <p class="font-display text-xl text-red-900 mt-0 mb-2.5 font-semibold">Consequatur et cum atque mollitia</p>
+                        <div class="prose text-red-800">
+                            <p class="no-margin">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur culpa qui officia deserunt mollit laborum.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 id="basic-usage">Basic usage</h2>
+                    <p> 
+                        Praesentium laudantium magni. Consequatur reiciendis aliquid nihil iusto ut in et. Quisquam ut et aliquid occaecati.
+                        Culpa veniam aut et voluptates amet perspiciatis. Qui exercitationem in qui. Vel qui dignissimos sit quae distinctio.
+                    </p>
+                    <h3 id="your-first-cache">Your first cache</h3>
+                    <p>
+                        Minima vel non iste debitis. Consequatur repudiandae et quod accusamus sit molestias consequatur aperiam. Et sequi ipsa eum voluptatibus ipsam. Et quisquam ut.
+                    </p>
+                    <p>
+                        Qui quae esse aspernatur fugit possimus. Quam sed molestiae temporibus. Eum perferendis dignissimos provident ea et. 
+                        Et repudiandae quasi accusamus consequatur dolore nobis. Quia reiciendis necessitatibus a blanditiis iste quia. Ut quis et amet praesentium sapiente.
+                    </p>
+                    <h4>Change your password</h4>
+                    <ol class="ol-pretty uk-list-large">
+                        <li>Click your team name to open the Team Menu.</li>
+                        <li>Select Profile &amp; account. This will open your profile on the right side of your screen.</li>
+                        <li>Under your name, click Account Settings. This will open your Account settings.</li>
+                        <li>By Password, click expand.</li>
+                        <li>Enter your Current Password, and then a New Password.</li>
+                        <li>Click Save Password.</li>
+                    </ol>
+                    <div class="overflow-x-auto">       
+                        <div class="inline-block min-w-full align-middle">
+                            <table class="min-w-full custom-table divide-gray-300"">
+                                <thead>
+                                <tr>
+                                    <th scope="col" class="py-3.5 pl-4 pr-3 text-left nav-text font-semibold text-gray-900 sm:pl-0">Name</th>
+                                    <th scope="col" class="px-3 py-3.5 text-left nav-text font-semibold text-gray-900">Title</th>
+                                    <th scope="col" class="px-3 py-3.5 text-left nav-text font-semibold text-gray-900">Email</th>
+                                    <th scope="col" class="px-3 py-3.5 text-left nav-text font-semibold text-gray-900">Role</th>
+                                </tr>
+                                </thead>
+                                <tbody class="custom-table divide-gray-200">
+                                <tr>
+                                    <td class="whitespace-nowrap py-4 pl-4 pr-3 nav-text font-medium text-gray-900 sm:pl-0">John Smith</td>
+                                    <td class="whitespace-nowrap px-3 py-4 nav-text text-gray-500">Front-end Developer</td>
+                                    <td class="whitespace-nowrap px-3 py-4 nav-text text-gray-500">johnsmith@example.com</td>
+                                    <td class="whitespace-nowrap px-3 py-4 nav-text text-gray-500">Member</td>
+                                </tr>
+                                <tr>
+                                    <td class="whitespace-nowrap py-4 pl-4 pr-3 nav-text font-medium text-gray-900 sm:pl-0">John Smith</td>
+                                    <td class="whitespace-nowrap px-3 py-4 nav-text text-gray-500">Front-end Developer</td>
+                                    <td class="whitespace-nowrap px-3 py-4 nav-text text-gray-500">johnsmith@example.com</td>
+                                    <td class="whitespace-nowrap px-3 py-4 nav-text text-gray-500">Member</td>
+                                </tr>
+                                <tr>
+                                    <td class="whitespace-nowrap py-4 pl-4 pr-3 nav-text font-medium text-gray-900 sm:pl-0">John Smith</td>
+                                    <td class="whitespace-nowrap px-3 py-4 nav-text text-gray-500">Front-end Developer</td>
+                                    <td class="whitespace-nowrap px-3 py-4 nav-text text-gray-500">johnsmith@example.com</td>
+                                    <td class="whitespace-nowrap px-3 py-4 nav-text text-gray-500">Member</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h3 id="adding-middleware">Adding middleware</h3>
+                    <p>
+                        Officia nobis tempora maiores id iusto magni reprehenderit velit. Quae dolores inventore molestiae perspiciatis aut. 
+                        Quis sequi officia quasi rem officiis officiis. Nesciunt ut cupiditate. Sunt aliquid explicabo enim ipsa eum recusandae. Vitae sunt eligendi et non beatae minima aut.
+                    </p>
+                    <p>
+                        Harum perferendis aut qui quibusdam tempore laboriosam voluptatum qui sed. Amet error amet totam exercitationem aut corporis accusantium dolorum.
+                         Perspiciatis aut animi et. Sed unde error ut aut rerum. 
+                    </p>
+                    <p>
+                        Ut quo libero aperiam mollitia est repudiandae quaerat corrupti explicabo. Voluptas accusantium sed et doloribus voluptatem fugiat a mollitia. Numquam est magnam dolorem asperiores fugiat. Soluta et fuga amet alias temporibus quasi velit. 
+                        Laudantium voluptatum perspiciatis doloribus quasi facere. Eveniet deleniti veniam et quia veritatis minus veniam perspiciatis.
+                    </p>
+                    <hr>
+                    <h2 id="getting-help">Getting help</h2>
+                    <p>
+                        Consequuntur et aut quisquam et qui consequatur eligendi. Necessitatibus dolorem sit. Excepturi cumque quibusdam soluta ullam rerum voluptatibus.
+                        Porro illo sequi consequatur nisi numquam nisi autem. Ut necessitatibus aut. Veniam ipsa voluptatem sed.
+                    </p>
+                    <h3 id="submit-an-issue">Submit an issue</h3>
+                    <p>
+                        Inventore et aut minus ut voluptatem nihil commodi doloribus consequatur. Facilis perferendis nihil sit aut aspernatur iure ut dolores et. Aspernatur odit dignissimos. Aut qui est sint sint.
+                    </p>
+                    <p>
+                        Facere aliquam qui. Dolorem officia ipsam adipisci qui molestiae. Error voluptatem reprehenderit ex.
+                    </p>
+                    <p>
+                        Consequatur enim quia maiores aperiam et ipsum dicta. Quam ut sit facere sit quae. Eligendi veritatis aut ut veritatis iste ut adipisci illo.
+                    </p>
+                    <h3 id="join-the-community">Join the community</h3>
+                    <p>
+                        Praesentium facilis iste aliquid quo quia a excepturi. Fuga reprehenderit illo sequi voluptatem voluptatem omnis. Id quia consequatur rerum consectetur eligendi et omnis.
+                        Voluptates iusto labore possimus provident praesentium id vel harum quisquam. Voluptatem provident corrupti.
+                    </p>
+                    <p>
+                        Eum et ut. Qui facilis est ipsa. Non facere quia sequi commodi autem. Dicta autem sit sequi omnis impedit. Eligendi amet dolorum magnam repudiandae in a.
+                    </p>
+                    <p>
+                        Molestiae iusto ut exercitationem dolorem unde iusto tempora atque nihil. Voluptatem velit facere laboriosam nobis ea.
+                        Consequatur rerum velit ipsum ipsam. Et qui saepe consequatur minima laborum tempore voluptatum et. Quia eveniet eaque sequi consequatur nihil eos.
+                    </p>
+                </div>
             </article>
+            <dl class="mt-12 flex">
+                <div>
+                    <dt class="font-display nav-text font-semibold text-slate-900">Previous</dt>
+                    <dd class="mt-1"><a class="nav-text text-slate-600 hover:text-slate-900 text-decoration-none" href="/"><span aria-hidden="true">←</span> Getting started</a></dd>
+                </div>
+                <div class="ml-auto text-right">
+                    <dt class="font-display nav-text font-semibold text-slate-900">Next</dt>
+                    <dd class="mt-1"><a class="nav-text text-slate-600 hover:text-slate-900 text-decoration-none" href="/docs/understanding-caching">Understanding caching<!-- --> <span aria-hidden="true">→</span></a></dd>
+                </div>
+            </dl>
+            <div class="mt12 flex flex-col items-center border-t border-slate-200 pt-10 space-y-6">
+                <h3 class="font-display font-semibold text-slate-900 text-lg">Was this article helpful?</h3>
+                <div class="flex space-x-4">
+                    <div class="flex items-center space-x-2 min-w-[3.75rem] rounded-md bg-sky-50 px-2.5 py-1.5 text-sm font-semibold font-display text-sky-500 shadow-sm hover:bg-sky-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                        </svg >
+                        <span>Yes</span>  
+                    </div>
+                    <div class="flex items-center space-x-2 min-w-[3.75rem] rounded-md bg-sky-50 px-2.5 py-1.5 text-sm font-semibold font-display text-sky-500 shadow-sm hover:bg-sky-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    <span>No</span>  
+                    </div>
+                </div>
+                <p class="text-slate-700 nav-text">Have more questions? <a class="text-slate-700 underline hover:text-sky-500" href="#">Submit a request.</a></p>
+            </div>
         </div>
         <div class="top-right-nav">
             <nav class="nav-text">
@@ -426,4 +927,8 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div class="mx-auto max-w-7x1 px-6 pb-8 pt-16 footer">
+        </div>
+    </footer>
 </body>
