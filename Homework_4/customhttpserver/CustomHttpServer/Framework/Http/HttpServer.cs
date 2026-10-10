@@ -37,12 +37,25 @@ public class HttpServer
     }
 
     public async Task Start()
+{
+    _listener.Start();
+    _isRunning = true;
+    
+    Console.WriteLine("Сервер запущен и доступен по адресам:");
+    if (_settings?.Prefixes != null)
     {
-        _listener.Start();
-        _isRunning = true;
-        Console.WriteLine("Сервер начал свою работу");
-        await ListenAsync();
+        foreach (var prefix in _settings.Prefixes)
+        {
+            Console.WriteLine($"  -> {prefix}");
+        }
     }
+    else
+    {
+        Console.WriteLine("  -> Адрес запуска не определен в настройках.");
+    }
+    
+    await ListenAsync();
+}
 
     public void Stop()
     {
